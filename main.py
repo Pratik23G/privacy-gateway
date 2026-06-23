@@ -27,6 +27,6 @@ def echo(payload: cloneBase):
         "id": payload.id,
         "name":payload.name,
         "email": payload.email,
-        "is_active": False
+        "is_active": payload.is_active
     }
     return results
