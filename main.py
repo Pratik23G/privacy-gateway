@@ -2,7 +2,6 @@ import fastapi
 
 app = fastapi.FastAPI()
 @app.get("/hello")
-
 def message():
     response = {
         "userName" : "Pratik",
