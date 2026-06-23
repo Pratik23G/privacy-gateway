@@ -1,12 +1,11 @@
 import fastapi
 
 app = fastapi.FastAPI()
-@app.get("/hello")
-
-def message():
+@app.get("/hello/{userName}")
+def message(userName):
     response = {
-        "userName" : "Pratik",
-        "message" : "Hello, Pratik",
+        "userName" : userName,
+        "message" : f"Hello,{userName}",
         "directions": "We will add more stuffs in future"
     }
     return response
